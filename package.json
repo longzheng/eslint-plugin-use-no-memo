@@ -1,0 +1,31 @@
+{
+    "name": "eslint-plugin-use-no-memo",
+    "version": "1.0.0",
+    "description": "ESLint plugin for \"use no memo\" directive with React libraries incompatible with React Compiler",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "homepage": "https://github.com/longzheng/eslint-plugin-use-no-memo#readme",
+    "bugs": {
+        "url": "https://github.com/longzheng/eslint-plugin-use-no-memo/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/longzheng/eslint-plugin-use-no-memo.git"
+    },
+    "license": "MIT",
+    "author": "Long Zheng",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "node --test test/**/*.test.js"
+    },
+    "devDependencies": {
+        "eslint": "^9.0.0"
+    },
+    "peerDependencies": {
+        "eslint": ">=9.0.0"
+    }
+}
