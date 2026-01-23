@@ -23,7 +23,7 @@
         "test": "node --test test/**/*.test.js"
     },
     "devDependencies": {
-        "eslint": "^9.0.0"
+        "eslint": "^9.39.2"
     },
     "peerDependencies": {
         "eslint": ">=9.0.0"
