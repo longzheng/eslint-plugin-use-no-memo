@@ -1,5 +1,6 @@
 import reactHookForm from './rules/react-hook-form.js';
 import tanstackTable from './rules/tanstack-table.js';
+import materialReactTable from './rules/material-react-table.js';
 import fs from 'fs';
 
 const pkg = JSON.parse(
@@ -15,6 +16,7 @@ const plugin = {
     rules: {
         'react-hook-form': reactHookForm,
         'tanstack-table': tanstackTable,
+        'material-react-table': materialReactTable,
     },
 };
 

@@ -12,6 +12,7 @@ This plugin currently supports the following libraries and hooks:
 
 - **react-hook-form**: `useForm` hook ([Issue #12298](https://github.com/react-hook-form/react-hook-form/issues/12298))
 - **@tanstack/react-table**: `useReactTable` hook ([Issue #5567](https://github.com/TanStack/table/issues/5567))
+- **material-react-table**: `useMaterialReactTable` hook
 
 ## Installation
 
@@ -36,6 +37,7 @@ export default [
     rules: {
       'use-no-memo/react-hook-form': 'error',
       'use-no-memo/tanstack-table': 'error',
+      'use-no-memo/material-react-table': 'error',
     },
   },
 ];
@@ -51,6 +53,7 @@ module.exports = {
   rules: {
     'use-no-memo/react-hook-form': 'error',
     'use-no-memo/tanstack-table': 'error',
+    'use-no-memo/material-react-table': 'error',
   },
 };
 ```
@@ -112,4 +115,33 @@ function MyComponent() {
   });
   // ... rest of component
 }
+
+### `use-no-memo/material-react-table`
+
+Enforces the `'use no memo'` directive when using `useMaterialReactTable` from material-react-table.
+
+#### ❌ Incorrect
+
+```jsx
+import { useMaterialReactTable } from 'material-react-table';
+
+function MyComponent() {
+  const table = useMaterialReactTable({
+    // ... table config
+  });
+}
+```
+
+#### ✅ Correct
+
+```jsx
+import { useMaterialReactTable } from 'material-react-table';
+
+function MyComponent() {
+  'use no memo';
+  const table = useMaterialReactTable({
+    // ... table config
+  });
+}
+```
 ```
