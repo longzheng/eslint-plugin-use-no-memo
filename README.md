@@ -12,7 +12,7 @@ This plugin currently supports the following libraries and hooks:
 
 - **react-hook-form**: `useForm` hook ([Issue #12298](https://github.com/react-hook-form/react-hook-form/issues/12298))
 - **@tanstack/react-table**: `useReactTable` hook ([Issue #5567](https://github.com/TanStack/table/issues/5567))
-- **material-react-table**: `useMaterialReactTable` hook
+- **material-react-table**: `useMaterialReactTable` hook ([Issue #1356](https://github.com/KevinVandy/material-react-table/issues/1356))
 
 ## Installation
 
